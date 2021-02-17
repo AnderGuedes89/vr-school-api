@@ -1,0 +1,19 @@
+{
+  "name": "vr-school-api",
+  "version": "1.0.0",
+  "description": "API desenvolvida como teste pratico para entrevista na empresa VR Software",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "author": "Anderson Guedes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
