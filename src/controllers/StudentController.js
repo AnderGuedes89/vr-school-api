@@ -2,6 +2,7 @@ const Student = require('../models/Student');
 
 module.exports = {
     async index(req, res) {
+        res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
         const students = await Student.findAll()
 
         return res.json(students)
