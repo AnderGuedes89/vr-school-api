@@ -9,6 +9,8 @@ module.exports = {
     },
 
     async store(req, res) {
+        console.log("VAI!!");
+        console.log(req.body);
         const { name } = req.body;
 
         const student = await Student.create({ name })
