@@ -11,10 +11,12 @@ routes.use(function (req, res, next) {
     next();
 });
 
-routes.get('/students', StudentController.index);
-routes.post('/students', StudentController.store);
+routes.get('/students', StudentController.getAll);
+routes.get('/students/:id', StudentController.getById);
+routes.post('/students', StudentController.post);
 
-routes.get('/courses', CourseController.index);
-routes.post('/courses', CourseController.store);
+routes.get('/courses', CourseController.getAll);
+routes.get('/courses/:id', CourseController.getById);
+routes.post('/courses', CourseController.post);
 
 module.exports = routes;
